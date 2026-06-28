@@ -277,6 +277,14 @@ h3 {
   font-size: 1rem;
 }
 
+.flag {
+  display: inline-block;
+  margin: 0 2px;
+  font-size: 0.95em;
+  line-height: 1;
+  vertical-align: -0.05em;
+}
+
 .button-row,
 .card-actions,
 .social-row {
