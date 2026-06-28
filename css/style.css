@@ -343,6 +343,7 @@ h3 {
   aspect-ratio: 1 / 1;
   display: grid;
   place-items: center;
+  overflow: hidden;
   border-radius: var(--radius);
   background:
     linear-gradient(135deg, color-mix(in srgb, var(--accent-soft) 75%, transparent), transparent),
@@ -350,17 +351,11 @@ h3 {
   border: 1px solid var(--line);
 }
 
-.profile-art span {
-  width: 46%;
-  aspect-ratio: 1;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  background: var(--surface);
-  color: var(--accent);
-  font-size: clamp(2rem, 5vw, 4.6rem);
-  font-weight: 900;
+.profile-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .status-line {
