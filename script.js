@@ -40,6 +40,13 @@
     });
   }
 
+  function updateHeaderState() {
+    document.body.classList.toggle("nav-scrolled", window.scrollY > 72);
+  }
+
+  updateHeaderState();
+  window.addEventListener("scroll", updateHeaderState, { passive: true });
+
   const currentPage = window.location.pathname.split("/").pop() || "index.html";
   document.querySelectorAll(".nav-links a").forEach(function (link) {
     const href = link.getAttribute("href");
@@ -76,8 +83,26 @@
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       const note = form.querySelector(".form-note");
+      const formData = new FormData(form);
+      const name = String(formData.get("name") || "").trim();
+      const email = String(formData.get("email") || "").trim();
+      const subject = String(formData.get("subject") || "Portfolio contact").trim();
+      const message = String(formData.get("message") || "").trim();
+
+      if (!form.reportValidity()) return;
+
+      const body = [
+        "Name: " + name,
+        "Email: " + email,
+        "",
+        message
+      ].join("\n");
+      const mailto = "mailto:Abubakerokz@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+
+      window.location.href = mailto;
+
       if (note) {
-        note.textContent = "Thanks. This demo form is UI only, so no message was sent.";
+        note.textContent = "Message ready in your email app.";
       }
     });
   });

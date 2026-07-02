@@ -15,20 +15,26 @@
   <link rel="stylesheet" href="../css/style.css">
   <script defer src="../script.js"></script>
 </head>
-<body>
+<body class="expert-page themed-page">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="../index.html"><span class="brand-mark">AA</span><span>Abubaker Attique</span></a>
-      <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-      <div class="nav-links">
+    <nav class="nav expert-nav" aria-label="Primary navigation">
+      <div class="expert-center-links" aria-label="Portfolio navigation">
         <a href="../index.html">Home</a>
         <a href="profiles.html">Profiles</a>
         <a href="projects.html">Projects</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
-      <button class="theme-toggle" type="button" aria-label="Toggle dark and light mode"><span class="theme-icon">◐</span></button>
+      <button class="menu-toggle expert-menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links expert-mobile-links">
+        <a href="../index.html">Home</a>
+        <a href="profiles.html">Profiles</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="../assets/Abubaker_Attique_CV.pdf">Resume</a>
+      </div>
     </nav>
   </header>
 
@@ -41,73 +47,96 @@
     </section>
 
     <section class="section about-layout">
-      <article class="content-panel reveal">
-        <h2>Professional Bio</h2>
-        <p>Abubaker Attique is an AI/ML Engineer and Computer Science graduate pursuing an M.Sc. in Artificial Intelligence at Brandenburg University of Technology Cottbus-Senftenberg in Germany.</p>
-        <p>He has 2+ years of professional software development experience and specializes in designing, training, and deploying deep learning systems across computer vision, speech, and multi-modal applications, including models trained from scratch reaching up to 97% accuracy.</p>
-      </article>
-
-      <article class="content-panel reveal">
-        <h2>Skills</h2>
-        <div class="skill-cloud">
-          <span>Python</span>
-          <span>PyTorch</span>
-          <span>TensorFlow</span>
-          <span>Keras</span>
-          <span>Scikit-learn</span>
-          <span>Computer Vision</span>
-          <span>MediaPipe</span>
-          <span>OpenCV</span>
-          <span>Librosa</span>
-          <span>LSTMs</span>
-          <span>Model Training</span>
-          <span>Model Evaluation</span>
-          <span>NumPy</span>
-          <span>Pandas</span>
-          <span>Matplotlib</span>
-          <span>Seaborn</span>
-          <span>ReactJS</span>
-          <span>Next.js</span>
-          <span>React Native</span>
-          <span>Flask</span>
-          <span>Express.js</span>
-          <span>REST APIs</span>
-          <span>Tailwind CSS</span>
-          <span>Bootstrap</span>
-          <span>PostgreSQL</span>
-          <span>MySQL</span>
-          <span>SQLite</span>
-          <span>MongoDB</span>
-          <span>SQL</span>
-          <span>C/C++</span>
-          <span>JavaScript</span>
-          <span>PHP</span>
-          <span>HTML/CSS</span>
-          <span>BeautifulSoup</span>
-          <span>Git</span>
-          <span>Linux</span>
-          <span>Figma</span>
+      <article class="content-panel about-intro reveal">
+        <p class="card-kicker">Professional Bio</p>
+        <h2>AI engineer with a product builder's mindset.</h2>
+        <p>I am an AI/ML Engineer and Computer Science graduate pursuing an M.Sc. in Artificial Intelligence at Brandenburg University of Technology Cottbus-Senftenberg in Germany.</p>
+        <p>My work connects model training with usable software: computer vision systems, speech analysis, multi-modal scoring, backend inference APIs, and React-based product interfaces.</p>
+        <div class="about-stats" aria-label="Professional highlights">
+          <div><strong>2+ years</strong><span>software development experience</span></div>
+          <div><strong>97.3%</strong><span>reported posture model accuracy</span></div>
+          <div><strong>M.Sc. AI</strong><span>BTU Cottbus-Senftenberg</span></div>
         </div>
       </article>
 
-      <article class="content-panel reveal">
-        <h2>Education</h2>
-        <div class="timeline">
+      <article class="content-panel skill-panel reveal">
+        <p class="card-kicker">Core Skills</p>
+        <h2>Practical stack for model-backed products.</h2>
+        <div class="skill-groups">
           <div>
-            <span>Apr 2026 - Present</span>
-            <strong>M.Sc. in Artificial Intelligence</strong>
-            <p>Brandenburg University of Technology Cottbus-Senftenberg, Cottbus, <span class="flag" aria-label="Germany">🇩🇪</span> Germany.</p>
+            <h3>AI / ML</h3>
+            <div class="skill-cloud">
+              <span>Python</span>
+              <span>PyTorch</span>
+              <span>TensorFlow</span>
+              <span>Keras</span>
+              <span>Scikit-learn</span>
+              <span>CNNs</span>
+              <span>LSTMs</span>
+              <span>Fine-Tuning Models</span>
+              <span>Model Training</span>
+              <span>Model Evaluation</span>
+            </div>
           </div>
           <div>
-            <span>Sep 2020 - Jun 2024</span>
-            <strong>B.Sc. in Computer Science</strong>
-            <p>FAST-NUCES, National University of Computer &amp; Emerging Sciences, Pakistan.</p>
+            <h3>Vision / Data</h3>
+            <div class="skill-cloud">
+              <span>Computer Vision</span>
+              <span>MediaPipe</span>
+              <span>OpenCV</span>
+              <span>Librosa</span>
+              <span>NumPy</span>
+              <span>Pandas</span>
+              <span>Matplotlib</span>
+              <span>Seaborn</span>
+              <span>Jupyter Notebook</span>
+              <span>Excel</span>
+              <span>Data Visualization</span>
+              <span>Statistical Analysis</span>
+              <span>Data Preprocessing</span>
+              <span>Feature Engineering (MFCC)</span>
+            </div>
+          </div>
+          <div>
+            <h3>Product Engineering</h3>
+            <div class="skill-cloud">
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>HTML/CSS</span>
+              <span>ReactJS</span>
+              <span>Next.js</span>
+              <span>React Native</span>
+              <span>Flask</span>
+              <span>Express.js</span>
+              <span>REST APIs</span>
+              <span>Tailwind CSS</span>
+              <span>Bootstrap</span>
+              <span>Git</span>
+            </div>
+          </div>
+          <div>
+            <h3>Data / Systems</h3>
+            <div class="skill-cloud">
+              <span>PostgreSQL</span>
+              <span>MySQL</span>
+              <span>SQLite</span>
+              <span>MongoDB</span>
+              <span>SQL</span>
+              <span>C/C++</span>
+              <span>Linux</span>
+              <span>VS Code</span>
+              <span>Android Studio</span>
+              <span>Figma</span>
+              <span>BeautifulSoup</span>
+              <span>Web Scraping</span>
+            </div>
           </div>
         </div>
       </article>
 
-      <article class="content-panel reveal">
-        <h2>Experience</h2>
+      <article class="content-panel timeline-panel experience-panel reveal">
+        <p class="card-kicker">Experience</p>
+        <h2>Frontend engineering, AI systems, and applied product work.</h2>
         <div class="timeline">
           <div>
             <span>May 2025 - May 2026</span>
@@ -134,6 +163,34 @@
             <strong>Teaching Assistant, Physics - FAST-NUCES</strong>
             <p>Mentored 150+ students through weekly office hours, tutorials, and one-on-one support.</p>
           </div>
+        </div>
+      </article>
+
+      <article class="content-panel timeline-panel education-panel reveal">
+        <p class="card-kicker">Education</p>
+        <h2>Academic foundation in computer science and AI.</h2>
+        <div class="timeline">
+          <div>
+            <span>Apr 2026 - Present</span>
+            <strong>M.Sc. in Artificial Intelligence</strong>
+            <p>Brandenburg University of Technology Cottbus-Senftenberg, Cottbus, <span class="flag" aria-label="Germany"></span> Germany 🇩🇪</p>
+          </div>
+          <div>
+            <span>Sep 2020 - Jun 2024</span>
+            <strong>B.Sc. in Computer Science</strong>
+            <p>FAST-NUCES, National University of Computer &amp; Emerging Sciences, <span class="flag" aria-label="Pakistan"></span> Pakistan 🇵🇰</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="content-panel language-panel reveal">
+        <p class="card-kicker">Languages</p>
+        <h2>Communication across local and international contexts.</h2>
+        <div class="language-list" aria-label="Languages">
+          <div><strong>Urdu</strong><span>Native</span></div>
+          <div><strong>Pashto</strong><span>Native</span></div>
+          <div><strong>English</strong><span>Professional</span></div>
+          <div><strong>German</strong><span>A1.1</span></div>
         </div>
       </article>
     </section>

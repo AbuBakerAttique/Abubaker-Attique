@@ -15,20 +15,26 @@
   <link rel="stylesheet" href="../css/style.css">
   <script defer src="../script.js"></script>
 </head>
-<body>
+<body class="expert-page themed-page">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="../index.html"><span class="brand-mark">AA</span><span>Abubaker Attique</span></a>
-      <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-      <div class="nav-links">
+    <nav class="nav expert-nav" aria-label="Primary navigation">
+      <div class="expert-center-links" aria-label="Portfolio navigation">
         <a href="../index.html">Home</a>
         <a href="profiles.html">Profiles</a>
         <a href="projects.html">Projects</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
-      <button class="theme-toggle" type="button" aria-label="Toggle dark and light mode"><span class="theme-icon">◐</span></button>
+      <button class="menu-toggle expert-menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links expert-mobile-links">
+        <a href="../index.html">Home</a>
+        <a href="profiles.html">Profiles</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="../assets/Abubaker_Attique_CV.pdf">Resume</a>
+      </div>
     </nav>
   </header>
 
@@ -41,12 +47,17 @@
 
     <section class="section">
       <div class="project-grid">
-        <article class="project-card reveal">
+        <article class="project-card project-card-featured reveal">
           <div>
             <p class="card-kicker">AI / Multi-Modal</p>
             <h2>AI Interview Coach</h2>
-            <p>A real-time multi-modal interview analysis system using webcam and microphone input, 4 custom deep learning models, score fusion, grades, and actionable feedback.</p>
+            <p>A real-time interview analysis platform that reads webcam and microphone signals, fuses model scores, and returns clear coaching feedback for speech, expression, and posture.</p>
           </div>
+          <ul class="project-highlights" aria-label="Project highlights">
+            <li><strong>4 models</strong><span>speech, face, posture, and fusion scoring</span></li>
+            <li><strong>97.3%</strong><span>reported posture model accuracy</span></li>
+            <li><strong>Product UI</strong><span>Flask API with React workflow</span></li>
+          </ul>
           <ul class="stack-list" aria-label="Tech stack">
             <li>Python</li>
             <li>PyTorch</li>
@@ -56,7 +67,7 @@
             <li>Flask</li>
             <li>ReactJS</li>
           </ul>
-          <p class="project-note">Trained speech CNN+LSTM, facial-expression CNN, and posture models with reported accuracies of 93.4%, 75.5%, and 97.3% in the updated CV.</p>
+          <p class="project-note">Trained speech CNN+LSTM, facial-expression CNN, and posture models with reported accuracies of 93.4%, 75.5%, and 97.3%.</p>
           <div class="card-actions">
             <a href="https://github.com/AbuBakerAttique/AI-Interview-Coach" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://ai-interview-coach-demo.streamlit.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
@@ -66,8 +77,13 @@
           <div>
             <p class="card-kicker">Computer Vision</p>
             <h2>AI Gym Rep Counter &amp; Form Analyzer</h2>
-            <p>A real-time fitness tracker using MediaPipe Pose to count reps and detect form errors across 6 exercises, with voice feedback and a 3D form guide.</p>
+            <p>A real-time fitness tracker that follows body pose, counts repetitions, detects form mistakes, and gives voice feedback while users train.</p>
           </div>
+          <ul class="project-highlights" aria-label="Project highlights">
+            <li><strong>6 exercises</strong><span>exercise-specific thresholds</span></li>
+            <li><strong>Live pose</strong><span>MediaPipe joint tracking</span></li>
+            <li><strong>3D guide</strong><span>form reference with voice cues</span></li>
+          </ul>
           <ul class="stack-list" aria-label="Tech stack">
             <li>Python</li>
             <li>MediaPipe</li>
@@ -84,8 +100,13 @@
           <div>
             <p class="card-kicker">NLP / Explainable AI</p>
             <h2>Fake News Detector</h2>
-            <p>An explainable news-text classifier that classifies articles as Fake or Real using TF-IDF and machine learning models, with LIME explanations and word cloud visualisations.</p>
+            <p>An explainable text-classification app that predicts whether an article is fake or real and shows why the model made that decision.</p>
           </div>
+          <ul class="project-highlights" aria-label="Project highlights">
+            <li><strong>LIME</strong><span>local model explanations</span></li>
+            <li><strong>TF-IDF</strong><span>classic NLP feature pipeline</span></li>
+            <li><strong>Analysis</strong><span>style and vocabulary signals</span></li>
+          </ul>
           <ul class="stack-list" aria-label="Tech stack">
             <li>Python</li>
             <li>Flask</li>
@@ -105,8 +126,13 @@
           <div>
             <p class="card-kicker">AI + Web App</p>
             <h2>Plant Disease Detection System</h2>
-            <p>A CNN-based plant-leaf disease classifier served through a backend inference API with image preprocessing and confidence scoring for real-time predictions.</p>
+            <p>A CNN-based plant-leaf disease classifier packaged behind an inference API for fast image upload, preprocessing, prediction, and confidence scoring.</p>
           </div>
+          <ul class="project-highlights" aria-label="Project highlights">
+            <li><strong>CNN</strong><span>plant-leaf image classification</span></li>
+            <li><strong>API</strong><span>backend inference workflow</span></li>
+            <li><strong>Scoring</strong><span>confidence output for predictions</span></li>
+          </ul>
           <ul class="stack-list" aria-label="Tech stack">
             <li>Python</li>
             <li>TensorFlow</li>
@@ -122,8 +148,13 @@
           <div>
             <p class="card-kicker">Final-Year Project</p>
             <h2>Mute Motion</h2>
-            <p>An AI-driven sign-language-to-text system built to support communication between sign-language and non-sign-language users through a mobile app experience.</p>
+            <p>A mobile sign-language-to-text system built to make communication easier between sign-language users and people who do not know sign language.</p>
           </div>
+          <ul class="project-highlights" aria-label="Project highlights">
+            <li><strong>Mobile app</strong><span>React Native experience</span></li>
+            <li><strong>Vision AI</strong><span>gesture recognition direction</span></li>
+            <li><strong>Firebase</strong><span>app data and backend services</span></li>
+          </ul>
           <ul class="stack-list" aria-label="Tech stack">
             <li>React Native</li>
             <li>Firebase</li>
