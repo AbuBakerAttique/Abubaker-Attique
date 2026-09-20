@@ -49,6 +49,31 @@
       <div class="project-grid">
         <article class="project-card project-card-featured reveal">
           <div>
+            <p class="card-kicker">AI / LLM / RAG</p>
+            <h2>FinMind AI</h2>
+            <p>A fully local, privacy-first Retrieval-Augmented Generation platform that answers natural-language questions over financial PDFs with verifiable, page-level citations.</p>
+          </div>
+          <ul class="project-highlights" aria-label="Project highlights">
+            <li><strong>Local RAG</strong><span>Qdrant vector search, 768-dim embeddings</span></li>
+            <li><strong>Zero arithmetic errors</strong><span>deterministic Decimal-based calculator</span></li>
+            <li><strong>Full stack</strong><span>FastAPI service with ReactJS dashboard</span></li>
+          </ul>
+          <ul class="stack-list" aria-label="Tech stack">
+            <li>Python 3.12</li>
+            <li>FastAPI</li>
+            <li>Qdrant</li>
+            <li>Ollama</li>
+            <li>Pydantic</li>
+            <li>Docker Compose</li>
+            <li>ReactJS</li>
+          </ul>
+          <p class="project-note">Ingestion pipeline built end to end with pypdf extraction and metadata-aware chunking; per-document filtering prevents cross-document contamination, and every figure cites its formula and source page. Covered by automated API, unit, and integration tests.</p>
+          <div class="card-actions">
+            <a href="https://github.com/AbuBakerAttique/FinMind-AI" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div>
             <p class="card-kicker">AI / Multi-Modal</p>
             <h2>AI Interview Coach</h2>
             <p>A real-time interview analysis platform that reads webcam and microphone signals, fuses model scores, and returns clear coaching feedback for speech, expression, and posture.</p>
