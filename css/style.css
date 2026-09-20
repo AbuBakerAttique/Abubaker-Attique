@@ -439,6 +439,11 @@ textarea {
   font-weight: 800;
 }
 
+.profile-icon i {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -612,9 +617,15 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   border-radius: var(--radius);
   font-weight: 680;
   transition: transform 160ms ease, border-color 160ms ease, background 160ms ease, color 160ms ease, box-shadow 160ms ease;
+}
+
+.social-row a i {
+  font-size: 1.1rem;
+  line-height: 1;
 }
 
 .btn {
@@ -733,7 +744,7 @@ h3 {
 .feature-grid,
 .article-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
 
