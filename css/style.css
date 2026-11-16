@@ -304,6 +304,30 @@ textarea {
   text-shadow: 0 1px 14px rgba(0, 0, 0, 0.22);
 }
 
+.expert-awards {
+  margin: -6px 0 22px;
+}
+
+.expert-awards a {
+  display: inline-block;
+  padding: 7px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 750;
+  text-decoration: none;
+  text-shadow: 0 1px 14px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  transition: background 160ms ease, border-color 160ms ease;
+}
+
+.expert-awards a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
 .expert-summary {
   max-width: 590px;
   margin: -10px 0 30px;
@@ -1017,6 +1041,64 @@ h3 {
 .experience-panel {
   grid-column: 2;
   grid-row: 3 / span 2;
+}
+
+.achievements-panel {
+  grid-column: 1 / -1;
+}
+
+.achievement-links {
+  margin-top: 12px;
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  gap: 18px;
+}
+
+.certificate-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.certificate-preview {
+  display: block;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface-muted);
+}
+
+.certificate-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 160ms ease;
+}
+
+.certificate-preview:hover img {
+  opacity: 0.88;
+}
+
+.certificate-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px;
+}
+
+.certificate-body h2 {
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+.certificate-body .card-actions {
+  margin-top: auto;
+  padding-top: 8px;
 }
 
 .skill-groups {
